@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 from utils import cliparser
 from core import checks
 from core.channel import Channel

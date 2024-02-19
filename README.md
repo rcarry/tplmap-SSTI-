@@ -108,6 +108,13 @@ root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/bin/sh
 bin:x:2:2:bin:/bin:/bin/sh
 ```
+### Using docker
+You can use docker instead, if you encounter any issue with the script (mostly caused by python2 dependencies e.g yaml).
+```console
+$ docker build -t tplmap .
+$ docker run --rm tplmap:latest -h
+$ docker run --rm tplmap:latest -u 'http://www.target.com/page?name=jhon'
+```
 
 Supported template engines
 --------------------------
